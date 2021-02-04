@@ -1,20 +1,27 @@
-//3. (5p) Të shkruhet programi që deklaron një variabël të tipit char dhe e inicializon sipas dëshirës me njërën shkronjë të vogël të alfabetit anglez (a-z).
-// Duke përdorur urdhërin switch të tregohet a është shkronja zanore apo bashkëtingëllore.
-// Shkronjat zanore të alfabetit anglez janë: a, e, i, o, u, y.
+ /*   Të shkruhet programi që deklaron një variabël të tipit char dhe e inicializon sipas dëshirës me njërën shkronjë të vogël të alfabetit anglez (a-z).
+ Duke përdorur urdhërin switch të tregohet a është shkronja zanore apo bashkëtingëllore.
+ Shkronjat zanore të alfabetit anglez janë: a, e, i, o, u, y.   */
+ 
 #include <iostream>
 using namespace std;
 int main(){
-    Fillimi:
+    Fillimi:   // Adresa, e cila bën rikthimin  e programit deri ne oiken ku eshte adresuar
     char a;
-    cout<<"Enter an character:";
+    cout<<"Enter an character (a-z): ";
     cin>>a;
     switch(a){
-        case 'a':cout<<"zanore"; break;
-        case 'e':cout<<"zanore";break;
-        case 'o':cout<<"zanore";break;
-        case'/x89':cout<<"zanore";break;
-        case 'u':cout<<"zanore";break;
-        case 'i':cout<<"zanore";break;
+        case 'a':cout<<"zanore"; 
+        break;
+        case 'e':cout<<"zanore";
+        break;
+        case 'o':cout<<"zanore";
+        break;
+        case'/x89':cout<<"zanore";  //"x89"eshte per karakterin (ë)
+        break;
+        case 'u':cout<<"zanore";
+        break;
+        case 'i':cout<<"zanore";
+        break;
         case 'y':cout<<"zanore";
         break;
         default: cout<<"bashtingllore";
@@ -24,13 +31,17 @@ int main(){
     }
     cout<<endl;
 
-    char rifillo;
-    cout<<"P-kthe, J-perfundo"<<endl;
+    char rikthe;
+    cout<<"(P-p)ktheje , (J-j)-perfundo"
+        <<endl;
     cin>>rifillo;
-    if(rifillo=='p'|| rifillo=='P') {
-        goto Fillimi;
+    if(rifillo=='p'|| rifillo=='P') 
+    {
+        goto Fillimi;      // goto Fillimi e kthen programin  ne fillim ,d.m.th fillon edhe njeher programi
     }
-        else if(rifillo=='j'||rifillo=='J'){
+        else if(rifillo=='j'||rifillo=='J')
+    {
             cout<<"Programi perfundoi!";
-        }
+    }
+        return 0;
     }
