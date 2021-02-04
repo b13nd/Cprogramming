@@ -10,19 +10,14 @@ int main(){
     cout<<"Enter an character (a-z): ";
     cin>>a;
     switch(a){
-        case 'a':cout<<"zanore"; 
-        break;
-        case 'e':cout<<"zanore";
-        break;
-        case 'o':cout<<"zanore";
-        break;
-        case'/x89':cout<<"zanore";  //"x89"eshte per karakterin (ë)
-        break;
-        case 'u':cout<<"zanore";
-        break;
-        case 'i':cout<<"zanore";
-        break;
-        case 'y':cout<<"zanore";
+        case 'a':
+        case 'e':
+        case 'o':
+        case'/x89':  //"x89"eshte per karakterin (ë)
+        case 'u':
+        case 'i':
+        case 'y':
+        cout<<"Zanoe"<<endl;
         break;
         default: cout<<"bashtingllore";
         break;
