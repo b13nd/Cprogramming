@@ -1,0 +1,36 @@
+//3. (5p) Të shkruhet programi që deklaron një variabël të tipit char dhe e inicializon sipas dëshirës me njërën shkronjë të vogël të alfabetit anglez (a-z).
+// Duke përdorur urdhërin switch të tregohet a është shkronja zanore apo bashkëtingëllore.
+// Shkronjat zanore të alfabetit anglez janë: a, e, i, o, u, y.
+#include <iostream>
+using namespace std;
+int main(){
+    Fillimi:
+    char a;
+    cout<<"Enter an character:";
+    cin>>a;
+    switch(a){
+        case 'a':cout<<"zanore"; break;
+        case 'e':cout<<"zanore";break;
+        case 'o':cout<<"zanore";break;
+        case'/x89':cout<<"zanore";break;
+        case 'u':cout<<"zanore";break;
+        case 'i':cout<<"zanore";break;
+        case 'y':cout<<"zanore";
+        break;
+        default: cout<<"bashtingllore";
+        break;
+
+
+    }
+    cout<<endl;
+
+    char rifillo;
+    cout<<"P-kthe, J-perfundo"<<endl;
+    cin>>rifillo;
+    if(rifillo=='p'|| rifillo=='P') {
+        goto Fillimi;
+    }
+        else if(rifillo=='j'||rifillo=='J'){
+            cout<<"Programi perfundoi!";
+        }
+    }
